@@ -1,0 +1,304 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n# \u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp; Assessment Dashboard #\n\n\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;Below is sample analysis for dataset given using **Apache Zeppelin**. Data is rendered from Hive table *ASSESSMENT_RESULTS* ",
+      "user": "anonymous",
+      "dateUpdated": "2019-01-20 17:50:04.598",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false,
+          "completionKey": "TAB"
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp; Assessment Dashboard\u003c/h1\u003e\n\u003cp\u003e\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;Below is sample analysis for dataset given using \u003cstrong\u003eApache Zeppelin\u003c/strong\u003e. Data is rendered from Hive table \u003cem\u003eASSESSMENT_RESULTS\u003c/em\u003e\u003c/p\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1547998482104_-1359196879",
+      "id": "20190120-153442_1461319211",
+      "dateCreated": "2019-01-20 15:34:42.104",
+      "dateStarted": "2019-01-20 17:50:04.658",
+      "dateFinished": "2019-01-20 17:50:06.373",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Data Value Spread Across Years/Question",
+      "text": "%spark.sql\nselect * From assessment_results",
+      "user": "anonymous",
+      "dateUpdated": "2019-01-20 17:50:29.368",
+      "config": {
+        "colWidth": 7.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 503.066,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "year": "string",
+                      "question": "string",
+                      "avg_data_val": "string",
+                      "record_count": "string",
+                      "category": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "pieChart": {},
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "style": "stack"
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "scatterChart": {
+                  "size": {
+                    "name": "avg_data_val",
+                    "index": 2.0,
+                    "aggr": "sum"
+                  },
+                  "group": {
+                    "name": "question",
+                    "index": 1.0,
+                    "aggr": "sum"
+                  },
+                  "xAxis": {
+                    "name": "year",
+                    "index": 0.0,
+                    "aggr": "sum"
+                  }
+                }
+              },
+              "keys": [
+                {
+                  "name": "year",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [
+                {
+                  "name": "question",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "avg_data_val",
+                  "index": 2.0,
+                  "aggr": "avg"
+                }
+              ],
+              "commonSetting": {}
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "editorMode": "ace/mode/sql",
+        "editorHide": false,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "year\tquestion\tavg_data_val\trecord_count\tcategory\n2014\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t11.0262\t216\tAll Age Bands\n2012\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t15.7951\t162\tAll Age Bands\n2012\tPercent of WIC children aged 2 to 4 years who have obesity\t14.6056\t162\tAll Age Bands\n2010\tPercent of WIC children aged 2 to 4 years who have obesity\t15.3864\t162\tAll Age Bands\n2008\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t12.7549\t216\tAll Age Bands\n2014\tPercent of WIC children aged 2 to 4 years who have obesity\t14.2716\t162\tAll Age Bands\n2008\tPercent of WIC children aged 2 to 4 years who have obesity\t15.2815\t162\tAll Age Bands\n2010\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t16.4679\t162\tAll Age Bands\n2010\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t12.4944\t216\tAll Age Bands\n2012\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t11.4153\t216\tAll Age Bands\n2008\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t16.4988\t162\tAll Age Bands\n2014\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t15.6519\t162\tAll Age Bands\n2012\tPercent of WIC children aged 2 to 4 years who have obesity\t13.5944\t54\tFemales Only\n2008\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t16.2963\t54\tFemales Only\n2008\tPercent of WIC children aged 2 to 4 years who have obesity\t13.9167\t54\tFemales Only\n2008\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t12.7296\t54\tFemales Only\n2014\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t10.7259\t54\tFemales Only\n2010\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t12.3815\t54\tFemales Only\n2010\tPercent of WIC children aged 2 to 4 years who have obesity\t14.1611\t54\tFemales Only\n2012\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t15.6481\t54\tFemales Only\n2010\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t16.2352\t54\tFemales Only\n2014\tPercent of WIC children aged 2 to 4 years who have obesity\t13.1981\t54\tFemales Only\n2012\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t11.2648\t54\tFemales Only\n2014\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t15.4111\t54\tFemales Only\n"
+          }
+        ]
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "http://10.0.2.15:4040/jobs/job?id\u003d0",
+            "http://10.0.2.15:4040/jobs/job?id\u003d1"
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "apps": [],
+      "jobName": "paragraph_1547996119097_-870683731",
+      "id": "20190120-145519_1992322609",
+      "dateCreated": "2019-01-20 14:55:19.097",
+      "dateStarted": "2019-01-20 17:50:06.505",
+      "dateFinished": "2019-01-20 17:50:26.355",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "title": "Data Value Spread Per Question - Only Females Across 6 Years",
+      "text": "%spark.sql\nselect * From assessment_results where category\u003d\u0027Females Only\u0027",
+      "user": "anonymous",
+      "dateUpdated": "2019-01-20 17:50:26.429",
+      "config": {
+        "colWidth": 5.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "pieChart",
+              "height": 504.043,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "year": "string",
+                      "question": "string",
+                      "avg_data_val": "string",
+                      "record_count": "string",
+                      "category": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "pieChart": {}
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "question",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "avg_data_val",
+                  "index": 2.0,
+                  "aggr": "avg"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "editorMode": "ace/mode/sql",
+        "editorHide": false,
+        "tableHide": false,
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "year\tquestion\tavg_data_val\trecord_count\tcategory\n2012\tPercent of WIC children aged 2 to 4 years who have obesity\t13.5944\t54\tFemales Only\n2008\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t16.2963\t54\tFemales Only\n2008\tPercent of WIC children aged 2 to 4 years who have obesity\t13.9167\t54\tFemales Only\n2008\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t12.7296\t54\tFemales Only\n2014\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t10.7259\t54\tFemales Only\n2010\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t12.3815\t54\tFemales Only\n2010\tPercent of WIC children aged 2 to 4 years who have obesity\t14.1611\t54\tFemales Only\n2012\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t15.6481\t54\tFemales Only\n2010\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t16.2352\t54\tFemales Only\n2014\tPercent of WIC children aged 2 to 4 years who have obesity\t13.1981\t54\tFemales Only\n2012\tPercent of WIC children aged 3-23 months old who have a high weight-for-length\t11.2648\t54\tFemales Only\n2014\tPercent of WIC children aged 2 to 4 years who have an overweight classification\t15.4111\t54\tFemales Only\n"
+          }
+        ]
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "http://10.0.2.15:4040/jobs/job?id\u003d2"
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "apps": [],
+      "jobName": "paragraph_1547996151762_1670923316",
+      "id": "20190120-145551_187024225",
+      "dateCreated": "2019-01-20 14:55:51.762",
+      "dateStarted": "2019-01-20 17:50:26.496",
+      "dateFinished": "2019-01-20 17:50:27.012",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Assessment",
+  "id": "2E4H2MXP3",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "spark:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "report",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}

@@ -24,14 +24,29 @@ The virtual machine will be running the following services:
 2. Clone this repo.
 3. In your terminal/cmd change your directory into the project directory (i.e. `cd msd_challenge`).
 4. Run `vagrant up --provider=virtualbox` to create the VM using virtualbox as a provider (**NOTE** *This will take a while the first time as many dependencies are downloaded - subsequent deployments will be quicker as dependencies are cached in the `resources` directory*).
-5. Once aboce command is completed, by this time the data from given [URL](https://chronicdata.cdc.gov/views/735e-byxc/rows.csv), You can see something like this below at the end of the execution i.e., Result Set Loaded into ASSESSMENT_RESULTS Target table,
+5. Once aboce command is completed, by this time the data from given [URL](https://chronicdata.cdc.gov/views/735e-byxc/rows.csv), You can see something like this below at the end of the execution i.e. Result Set Loaded into ASSESSMENT_RESULTS Target table,
 
 ![picture](temp/Vagrant_Final_Status.png)
 
 6. Execute ```vagrant ssh``` to login to the VM.
 7. Execute ```beeline -u 'jdbc:hive2://vigneshm:10000/default;' --color=true -n vagrant -p vagrant``` to login to the hive & see the tables created with requested data loaded. 
+
+![picture](temp/Hive_Table_Stats.png)
+
 8. Main ETL Functionality is implemented in a shell script within the scripts directory `data_proc.sh` & PySpark is written in `asmt_results.py`
-9. Navigate to ```http://vigneshm:8080/#/notebook/2E4H2MXP3``` for simple visualization built on Zeppelin with given dataset. 
+9. Navigate to ```http://vigneshm:8080/#/notebook/2E4H2MXP3``` for simple visualization built on Zeppelin with given dataset. This is how it should look like,
+
+![picture](temp/Zep_Dashboard.png)
+
+10. In case if there are any issues running %spark.sql within zeppelin dashboards, it must be a conf glitch, please restart the service with commands given below **after logging into vagrant virtual machine instance**
+
+```
+cd /home/ubuntu/zeppelin-0.8.0-bin-netinst/bin/
+sudo -sE
+./zeppelin-daemon.sh restart
+```
+
+![picture](temp/Zeppelin_Restart.png)
 
 # Work out the ip-address of the virtualbox VM
 The ip address of the virtualbox machine will be `10.211.55.101`. Please add this entry to your hosts file in your machine to access the services with hostname instead of IP in browser. Example shown below,
@@ -79,6 +94,3 @@ vagrant destroy
 ```
 ![picture](temp/Destroy_Machine.png)
 
-cd /home/ubuntu/zeppelin-0.8.0-bin-netinst/bin/
-sudo -sE
-./zeppelin-daemon.sh restart
