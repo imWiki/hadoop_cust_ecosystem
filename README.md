@@ -49,7 +49,7 @@ sudo -sE
 ![picture](temp/Zeppelin_Restart.png)
 
 # Work out the ip-address of the virtualbox VM
-The ip address of the virtualbox machine will be `10.211.55.101`. Please add this entry to your hosts file in your machine to access the services with hostname instead of IP in browser. Example shown below,
+The ip address of the virtualbox machine will be `10.211.55.101`. Please add this entry to your hosts file in your machine to access the services with hostname instead of IP in browser. As shown below,
 
 ![picture](temp/Host_File_Entry.png)
 
