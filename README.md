@@ -8,7 +8,6 @@ MSD Assessment to load given file into Hadoop Stack
 3. [Vagrant](https://www.vagrantup.com/downloads.html) - Download relevant platform installer & run the setup
 4. [VirtualBox](https://www.virtualbox.org/wiki/Downloads) - To run the virtual ubuntu machine with hadoop stack
 
-
 # Services
 The virtual machine will be running the following services:
 
@@ -16,43 +15,23 @@ The virtual machine will be running the following services:
 * YARN ResourceManager/NodeManager + JobHistoryServer + ProxyServer
 * Hive metastore and server2
 * Spark history server
-* Hbase server
+* Zeppelin Server
+* At the end batch script will download csv file & load to hive. PySpark will then load the output table with result dataset which will be visualized in Apache Zeppelin
 
 # Getting Started
 
-1. Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and/or [Docker](https://www.docker.com/)
-2. Download and install [Vagrant](http://www.vagrantup.com/downloads.html).
-3. Clone this repo.
-4. Check the `Vagrentfile` and comment/uncomment the optional components as required (Pig/Sqoop/HBase/Zeppelin/flume).
-5. Check the `scripts/versions.sh` file for the versions of the components.
-6. In your terminal change your directory into the project directory (i.e. `cd vagrant-hadoop-spark-hive`).
-7. Run `vagrant up --provider=virtualbox` to create the VM using virtualbox as a provider. Or run `vagrant up --provider=docker` to use docker as a provider. (**NOTE** *This will take a while the first time as many dependencies are downloaded - subsequent deployments will be quicker as dependencies are cached in the `resources` directory*).
-8. Execute ```vagrant ssh``` to login to the VM.
-
-# Work out the ip-address of the docker container
-To access the web user interfaces of the various services from your host machine, you need to work out which ip address to connect to. To determine this run the following docker commands 
-on the host: -
-
-```
-docker container ls
-
-CONTAINER ID        IMAGE                                      COMMAND               CREATED             STATUS              PORTS                                                                                                                    NAMES
-a44ca8ded5b8        nishidayuya/docker-vagrant-ubuntu:xenial   "/usr/sbin/sshd -D"   About an hour ago   Up About an hour    0.0.0.0:4040->4040/tcp, 0.0.0.0:8080->8080/tcp, 0.0.0.0:8088->8088/tcp, 0.0.0.0:9083->9083/tcp, 127.0.0.1:2222->22/tcp   vagrant-hadoop-hive-spark_node1_1539427474
-```
-
-then
-
-```
-docker inspect a44ca8ded5b8 | grep -i ipaddress
-            "SecondaryIPAddresses": null,
-            "IPAddress": "172.17.0.2",
-                    "IPAddress": "172.17.0.2",
-```
-
-So, in the case above the container's ip address is 172.17.0.2 - you can substitute this address if 'node1' does not work.
+1. Download and install VirtualBox & Vagrant with above given links.
+2. Clone this repo.
+3. In your terminal/cmd change your directory into the project directory (i.e. `cd msd_challenge`).
+4. Run `vagrant up --provider=virtualbox` to create the VM using virtualbox as a provider (**NOTE** *This will take a while the first time as many dependencies are downloaded - subsequent deployments will be quicker as dependencies are cached in the `resources` directory*).
+5. Execute ```vagrant ssh``` to login to the VM.
+6. Execute ```beeline -u 'jdbc:hive2://vigneshm:10000/default;' --color=true -n vagrant -p vagrant``` to login to the hive & see the tables created with requested data loaded. 
+7. Main ETL Functionality is implemented within the scripts directory `data_proc.sh` & PySpark is written within `asmt_results.py`
 
 # Work out the ip-address of the virtualbox VM
-The ip address of the virtualbox machine should be `10.211.55.101`
+The ip address of the virtualbox machine should be `10.211.55.101`. Please add this entry to your hosts file in your machine to access the services with hostname instead of IP in browser. Example shown below,
+
+![picture](temp/Host_File_Entry.png)
 
 # Map Reduce - Tez
 By default map reduce jobs will be executed via Tez to change this to standard MR, change the following parameter in $HADOOP_CONF/mapred-site.xml from: -
@@ -165,7 +144,7 @@ Thanks to [Alex Holmes](https://github.com/alexholmes) for the great work at
 
 
 
-beeline -u 'jdbc:hive2://vigneshm:10000/default;' --color=true -n vagrant -p vagrant
+
 
 cd /home/ubuntu/zeppelin-0.8.0-bin-netinst/bin/
 sudo -sE
