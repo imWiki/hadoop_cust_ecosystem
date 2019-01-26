@@ -1,5 +1,5 @@
-MSD Assessment to load given file into Hadoop Stack
-===================================================
+Custom Hadoop Stack Setup with Sample ETL & Spark Program
+=========================================================
 
 # Pre-Requesites
 
