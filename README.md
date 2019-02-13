@@ -21,7 +21,7 @@ The virtual machine will be running the following services:
 # Getting Started
 
 1. Download and install VirtualBox & Vagrant with above given links.
-2. Clone this repo ```git clone git@github.com:imWiki/msd_challenge.git```
+2. Clone this repo ```git clone git@github.com:imWiki/hadoop_cust_ecosystem.git```
 3. In your terminal/cmd change your directory into the project directory (i.e. `cd msd_challenge`).
 4. Run `vagrant up --provider=virtualbox` to create the VM using virtualbox as a provider (**NOTE** *This will take a while the first time as many dependencies are downloaded - subsequent deployments will be quicker as dependencies are cached in the `resources` directory*).
 5. Once above command is completed, by this time the data from given [URL](https://chronicdata.cdc.gov/views/735e-byxc/rows.csv) would've been loaded to Hive, You can see something like below at end of the execution i.e. Result Set Loaded into ASSESSMENT_RESULTS Target table,
