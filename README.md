@@ -1,4 +1,4 @@
-Custom Hadoop Stack Setup with Sample ETL & Spark Program
+Hadoop Env Setup with Sample ETL & Spark Program
 =========================================================
 
 # Pre-Requesites
